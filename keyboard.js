@@ -142,5 +142,9 @@ $(function () {
         });
         caps = caps == 'off' ? 'on' : 'off';
     });
+
+    $('.key').click(function () {
+        document.write($(this).text());
+    });
 });
 
