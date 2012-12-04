@@ -1,0 +1,1 @@
+press button get character
