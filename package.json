@@ -4,7 +4,8 @@
     "description" : "keyboard html widget: press button, get character",
     "main" : "index.js",
     "dependencies" : {
-        "brfs" : "~0.0.2"
+        "brfs" : "~0.0.2",
+        "hyperglue" : "~0.1.5"
     },
     "browserify" : {
         "transform": "brfs"
