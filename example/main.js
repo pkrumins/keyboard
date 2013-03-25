@@ -6,4 +6,9 @@ keyboard.appendTo('#keyboard');
 
 keyboard.on('key', function (keyCode, keyDesc) {
     console.log('You pressed ' + keyDesc + ' (key code: ' + keyCode + ')');
+    document.querySelector('#output').appendChild(
+        document.createTextNode(
+            keyDesc + " (key code: " + keyCode + ") "
+        )
+    );
 });
