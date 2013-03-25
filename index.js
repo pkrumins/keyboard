@@ -54,7 +54,7 @@ function Keyboard () {
         });
     }
 
-    root.querySelector('.caps').addEventListener('onclick', function (key) {
+    root.querySelector('.caps').addEventListener('click', function (key) {
         changeKeyCase(caps);
         caps = caps == 'off' ? 'on' : 'off';
     });
