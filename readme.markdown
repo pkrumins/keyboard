@@ -6,17 +6,13 @@ A HTML keyboard widget. Press button get bacon. Wait. Get character. Yep.
 Example
 =======
 
-view this example
-
 ```js
-
 var keyboard = require('slideways');
 keyboard.appendTo('#keyboard');
 
 keyboard.on('key', function (key, keyCode, keyDesc) {
     console.log('You pressed ' + keyDesc + ' (key code: ' + keyCode + ')');
 }
-
 ```
 
 Methods
@@ -26,7 +22,7 @@ Methods
 
 Return a new keyboard instance.
 
-## slider.appendTo(target)
+## keyboard.appendTo(target)
 
 Append the keyboard widget to the dom element or query selector string target.
 
