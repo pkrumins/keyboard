@@ -15,7 +15,7 @@ keyboard.on('key', function (key, keyCode, keyDesc) {
 }
 ```
 
-[See a live demo example.](http://www.catonmat.net/ftp/keyboard/).
+[See a live demo example.](http://www.catonmat.net/ftp/keyboard/)
 
 Methods
 =======
