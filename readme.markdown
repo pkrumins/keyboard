@@ -26,6 +26,13 @@ Return a new keyboard instance.
 
 Append the keyboard widget to the dom element or query selector string target.
 
+Events
+======
+
+## keyboard.on('key', function (keyCode, keyDesc) { })
+
+Keyboard emits `key` events when you press keys. The callback receives `keyCode`, `keyDesc` parameters. `keyCode` is the decimal key code for the pressed key. `keyDesc` is the key description (such as 'a', 'Shift', 'ESC', etc.)
+
 Install
 =======
 
