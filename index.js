@@ -16,8 +16,8 @@ var hyperglue = require('hyperglue');
 var EventEmitter = require('events').EventEmitter;
 var fs = require('fs');
 
-var html = fs.readFileSync(__dirname + '/keyboard.html');
-var css = fs.readFileSync(__dirname + '/keyboard.css');
+var html = fs.readFileSync(__dirname + '/static/keyboard.html');
+var css = fs.readFileSync(__dirname + '/static/keyboard.css');
 
 var keys = require('./keys').keys;
 var keyCodes = require('./keys').keyCodes;
