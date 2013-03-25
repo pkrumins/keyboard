@@ -121,30 +121,72 @@ var keys = {
     }
 };
 
+var keyCodes = {
+    'Ctrl' : 17,
+    'Alt' : 18,
+    'WinKey' : 21,
+    'OptKey' : 93,
+    'Space' : 32,
+    'ESC' : 27,
+    'F1' : 112,
+    'F2' : 113,
+    'F3' : 114,
+    'F4' : 115,
+    'F5' : 116,
+    'F6' : 117,
+    'F7' : 118,
+    'F8' : 119,
+    'F9' : 120,
+    'F10' : 121,
+    'F11' : 122,
+    'F12' : 123,
+    'Backsp' : 8,
+    'TAB' : 9,
+    'Enter' : 13,
+
+}
+
 var shift = 'off';
 var caps = 'off';
 
 $(function () {
-    $('#keyboard .shift').click(function () {
+    function changeKeyCase (shiftOrCaps) {
         $('#keyboard .row').each(function () {
             $('.key', this).each(function () {
-                $(this).text(keys['shift-' + shift][$(this).text()]);
+                $(this).text(keys['shift-' + shiftOrCaps][$(this).text()]);
             });
         });
+    }
+
+    function printKey (keyCode, val) {
+        $('#output').append(val + " (" + keyCode + ") ");
+    }
+
+    $('#keyboard .shift').click(function () {
+        changeKeyCase(shift);
         shift = shift == 'off' ? 'on' : 'off';
     });
 
     $('#keyboard .caps').click(function () {
-        $('#keyboard .row').each(function () {
-            $('.key', this).each(function () {
-                $(this).text(keys['shift-' + caps][$(this).text()]);
-            });
-        });
+        changeKeyCase(caps);
         caps = caps == 'off' ? 'on' : 'off';
     });
 
     $('.key').click(function () {
-        document.write($(this).text());
+        var key = $(this).text();
+        if (key == 'Shift' || key == 'Caps') {
+            return;
+        }
+        if (keyCodes[key]) {
+            printKey(keyCodes[key], key);
+        }
+        else {
+            printKey(key.charCodeAt(0), key);
+        }
+        if (shift == 'on') {
+            changeKeyCase(shift);
+            shift = 'off';
+        }
     });
 });
 
