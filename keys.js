@@ -1,5 +1,33 @@
+/*
+'`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'Backsp'
+'~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', 'Backsp'
+
+'TAB', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[', ']', '\\'
+'TAB', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{', '}', '|'
+
+'CAPS', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', '\'', 'Enter'
+'CAPS', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':', '"', 'Enter'
+
+'Shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/', 'Shift'
+'Shift', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<', '>', '?', 'Shift'
+*/
+
 module.exports.keys = {
     'shift-off' : {
+        'ESC' : 'ESC',
+        'F1' : 'F1',
+        'F2' : 'F2',
+        'F3' : 'F3',
+        'F4' : 'F4',
+        'F5' : 'F5',
+        'F6' : 'F6',
+        'F7' : 'F7',
+        'F8' : 'F8',
+        'F9' : 'F9',
+        'F10' : 'F10',
+        'F11' : 'F11',
+        'F12' : 'F12',
+
         '`' : '~', 
         '1' : '!', 
         '2' : '@', 
@@ -13,7 +41,9 @@ module.exports.keys = {
         '0' : ')', 
         '-' : '_', 
         '=' : '+', 
+        'Backsp' : 'Backsp',
 
+        'TAB' : 'TAB',
         'q' : 'Q', 
         'w' : 'W', 
         'e' : 'E', 
@@ -26,8 +56,9 @@ module.exports.keys = {
         'p' : 'P', 
         '[' : '{', 
         ']' : '}', 
+        '\\' : '|',
 
-        'CAPS' : 'CAPS', 
+        'Caps' : 'Caps', 
         'a' : 'A', 
         's' : 'S', 
         'd' : 'D', 
@@ -39,6 +70,7 @@ module.exports.keys = {
         'l' : 'L', 
         ';' : ':', 
         '\'' : '"', 
+        'Enter' : 'Enter',
 
         'Shift' : 'Shift', 
         'z' : 'Z', 
@@ -51,8 +83,28 @@ module.exports.keys = {
         ',' : '<', 
         '.' : '>', 
         '/' : '?', 
+
+        'Ctrl' : 'Ctrl',
+        'WinKey' : 'WinKey',
+        'Alt' : 'Alt',
+        'Space' : 'Space',
+        'OptKey' : 'OptKey'
     },
     'shift-on' : {
+        'ESC' : 'ESC',
+        'F1' : 'F1',
+        'F2' : 'F2',
+        'F3' : 'F3',
+        'F4' : 'F4',
+        'F5' : 'F5',
+        'F6' : 'F6',
+        'F7' : 'F7',
+        'F8' : 'F8',
+        'F9' : 'F9',
+        'F10' : 'F10',
+        'F11' : 'F11',
+        'F12' : 'F12',
+
         '~' : '`', 
         '!' : '1',
         '@' : '2',
@@ -66,7 +118,9 @@ module.exports.keys = {
         ')' : '0',
         '_' : '-',
         '+' : '=',
+        'Backsp' : 'Backsp',
 
+        'TAB' : 'TAB',
         'Q' : 'q',
         'W' : 'w',
         'E' : 'e',
@@ -79,8 +133,9 @@ module.exports.keys = {
         'P' : 'p',
         '{' : '[',
         '}' : ']',
+        '"' : '\'',
 
-        'CAPS' : 'CAPS',
+        'Caps' : 'Caps',
         'A' : 'a',
         'S' : 's',
         'D' : 'd',
@@ -91,7 +146,8 @@ module.exports.keys = {
         'K' : 'k',
         'L' : 'l',
         ':' : ';',
-        '"' : '\'',
+        '|' : '\\',
+        'Enter' : 'Enter',
 
         'Shift' : 'Shift',
         'Z' : 'z',
@@ -104,6 +160,12 @@ module.exports.keys = {
         '<' : ',',
         '>' : '.',
         '?' : '/',
+
+        'Ctrl' : 'Ctrl',
+        'WinKey' : 'WinKey',
+        'Alt' : 'Alt',
+        'Space' : 'Space',
+        'OptKey' : 'OptKey'
     }
 };
 
