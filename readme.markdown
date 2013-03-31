@@ -7,7 +7,7 @@ Example
 =======
 
 ```js
-var keyboard = require('slideways');
+var keyboard = require('keyboard2');
 keyboard.appendTo('#keyboard');
 
 keyboard.on('key', function (key, keyCode, keyDesc) {
@@ -41,10 +41,10 @@ Install
 With [npm](https://npmjs.org) do:
 
 ```
-npm install keyboard
+npm install keyboard2
 ```
 
-Use [browserify](http://browserify.org) to `require('keyboard')`.
+Use [browserify](http://browserify.org) to `require('keyboard2')`.
 
 License
 =======
