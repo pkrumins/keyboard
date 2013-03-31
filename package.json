@@ -1,5 +1,5 @@
 {
-    "name" : "keyboard",
+    "name" : "keyboard2",
     "version" : "0.0.1",
     "description" : "keyboard html widget: press button, get character",
     "main" : "index.js",
