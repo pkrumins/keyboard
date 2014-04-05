@@ -7,6 +7,7 @@ var css = fs.readFileSync(__dirname + '/static/keyboard.css');
 
 var KeyboardKeys = require('./keys').keys;
 var keyCodes = require('./keys').keyCodes;
+var keyCodesRegular = require('./keys').keyCodesRegular;
 
 var insertedCss = false;
 
@@ -68,10 +69,10 @@ function Keyboard () {
                 return;
             }
             if (keyCodes[key]) {
-                self.emit('key', keyCodes[key], key);
+                self.emit('key', keyCodes[key], key, keyCodes[key]);
             }
             else {
-                self.emit('key', key.charCodeAt(0), key);
+                self.emit('key', key.charCodeAt(0), key, keyCodesRegular[key]);
             }
             if (shift == 'on') {
                 changeKeyCase(shift);
