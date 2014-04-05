@@ -10,8 +10,8 @@ Example
 var keyboard = require('keyboard2');
 keyboard.appendTo('#keyboard');
 
-keyboard.on('key', function (key, keyCode, keyDesc) {
-    console.log('You pressed ' + keyDesc + ' (key code: ' + keyCode + ')');
+keyboard.on('key', function (key, keyCode, keyScanCode) {
+    console.log('You pressed ' + key + ' (key ascii code: ' + keyCode + ', key scan code: ' + keyScanCode + ')');
 }
 ```
 
@@ -31,9 +31,9 @@ Append the keyboard widget to the dom element or query selector string target.
 Events
 ======
 
-## keyboard.on('key', function (keyCode, keyDesc) { })
+## keyboard.on('key', function (key, keyCode, keyScanCode) { })
 
-Keyboard emits `key` events when you press keys. The callback receives `keyCode`, `keyDesc` parameters. `keyCode` is the decimal key code for the pressed key. `keyDesc` is the key description (such as 'a', 'Enter', 'ESC', etc.)
+Keyboard emits `key` events when you press keys. The callback receives `key`, `keyCode`, `keyScanCode` parameters. `keyCode` is the decimal key code for the pressed key. `key` is the key description (such as 'a', 'Enter', 'ESC', etc.). `keyScanCode` is the keyboard scan code of the key.
 
 Install
 =======
