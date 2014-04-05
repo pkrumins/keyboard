@@ -42,7 +42,8 @@ function Keyboard () {
         for (var i = 0; i < keys.length; i++) {
             var node = keys[i];
             var val = node.firstChild.nodeValue;
-            node.firstChild.nodeValue = KeyboardKeys['shift-' + shiftOrCaps][val];
+            if (KeyboardKeys['shift-' + shiftOrCaps][val] !== undefined) 
+                node.firstChild.nodeValue = KeyboardKeys['shift-' + shiftOrCaps][val];
         }
     }
 
