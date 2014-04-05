@@ -172,7 +172,7 @@ module.exports.keys = {
 module.exports.keyCodes = {
     'Ctrl' : 17,
     'Alt' : 18,
-    'WinKey' : 21,
+    'WinKey' : 91,
     'OptKey' : 93,
     'Space' : 32,
     'ESC' : 27,
@@ -190,5 +190,5 @@ module.exports.keyCodes = {
     'F12' : 123,
     'Backsp' : 8,
     'TAB' : 9,
-    'Enter' : 13,
+    'Enter' : 13
 };
